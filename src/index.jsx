@@ -59,9 +59,9 @@ function renderSuggestion({ name, alpha2: countryCode, currencyCode }) {
     <div className="inputContainer">
       <span className={iconClasses} />
       &nbsp;
-      <span className="country-name">
-        {name} Dayo ({currencyCode})
-      </span>
+      <span className="currency-name">({currencyCode})</span>
+      &nbsp;
+      <span className="country-name">{name}</span>
     </div>
   );
 }
