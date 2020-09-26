@@ -47,17 +47,18 @@ function getSuggestions(arg = "") {
 }
 
 function getSuggestionValue({ name, alpha2: countryCode, currencyCode }) {
-  const iconClasses = classNames(
-    "flag-icon",
-    `flag-icon-${countryCode.toLowerCase()}`
-  );
-  return (
-    <div className="inputContainer">
-      <span className={iconClasses} />
-      &nbsp;
-      <span className="currency-name">({currencyCode})</span>
-    </div>
-  );
+  //   const iconClasses = classNames(
+  //     "flag-icon",
+  //     `flag-icon-${countryCode.toLowerCase()}`
+  //   );
+  //   return (
+  //     <div className="inputContainer">
+  //       <span className={iconClasses} />
+  //       &nbsp;
+  //       <span className="currency-name">({currencyCode})</span>
+  //     </div>
+  //   );
+  return countryCode;
 }
 
 function renderSuggestion({ name, alpha2: countryCode, currencyCode }) {
