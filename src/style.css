@@ -62,6 +62,10 @@
   z-index: 2;
 }
 
+.selected-cu {
+  background: transparent;
+}
+
 .react-autosuggest__suggestions-list {
   margin: 0;
   padding: 0;
