@@ -56,7 +56,7 @@ function getSuggestionValue(country) {
     <div className="selected-cu">
       <span className={iconClasses} />
       &nbsp;
-      <span>{country.currencyCode}</span>
+      <span>({country.currencyCode})</span>
     </div>
   );
 }
