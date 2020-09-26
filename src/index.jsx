@@ -49,9 +49,10 @@ function getSuggestions(arg = "") {
 function renderInputComponent(inputProps) {
   return (
     <div className="custom-input">
-      <button {...inputProps}>
+      <input {...inputProps} className="hide-input" />
+      <div className="show-input">
         <span className="flag-icon flag-icon-ng" />
-      </button>
+      </div>
     </div>
   );
 }
