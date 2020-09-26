@@ -46,6 +46,16 @@ function getSuggestions(arg = "") {
       });
 }
 
+function renderInputComponent(inputProps) {
+  return (
+    <div className="custom-input">
+      <button {...inputProps}>
+        <span className="flag-icon flag-icon-ng" />
+      </button>
+    </div>
+  );
+}
+
 function getSuggestionValue({ name, alpha2: countryCode, currencyCode }) {
   //   const iconClasses = classNames(
   //     "flag-icon",
@@ -143,6 +153,7 @@ export default class extends React.Component {
           getSuggestionSelected={getSuggestionValue}
           getSuggestionValue={getSuggestionValue}
           renderSuggestion={renderSuggestion}
+          renderInputComponent={renderInputComponent}
           inputProps={inputProps}
           shouldRenderSuggestions={() => true}
           onSuggestionSelected={this.onSuggestionSelected}
