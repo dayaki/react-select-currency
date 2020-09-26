@@ -44,7 +44,8 @@
 .react-autosuggest__suggestions-container--open {
   display: block;
   position: absolute;
-  top: 51px;
+  top: -1px;
+  right: 0;
   width: 280px;
   border: 1px solid #aaa;
   background-color: #fff;
@@ -56,7 +57,7 @@
   font-size: 11pt;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  max-height: 16em;
+  max-height: 30em;
   overflow-y: auto;
   z-index: 2;
 }

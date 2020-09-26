@@ -47,6 +47,7 @@ function getSuggestions(arg = "") {
 }
 
 function getSuggestionValue(country) {
+  console.log("country----", country);
   return country.currencyCode;
 }
 
