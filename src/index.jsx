@@ -46,17 +46,16 @@ function getSuggestions(arg = "") {
       });
 }
 
-function getSuggestionValue(country) {
-  console.log("country----", country);
+function getSuggestionValue({ name, alpha2: countryCode, currencyCode }) {
   const iconClasses = classNames(
     "flag-icon",
-    `flag-icon-${country.alpha2.toLowerCase()}`
+    `flag-icon-${countryCode.toLowerCase()}`
   );
   return (
-    <div className="selected-cu">
+    <div className="inputContainer">
       <span className={iconClasses} />
       &nbsp;
-      <span>({country.currencyCode})</span>
+      <span className="currency-name">({currencyCode})</span>
     </div>
   );
 }
