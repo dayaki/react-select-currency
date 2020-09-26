@@ -58,7 +58,8 @@ function getSuggestionValue({ name, alpha2: countryCode, currencyCode }) {
   //       <span className="currency-name">({currencyCode})</span>
   //     </div>
   //   );
-  return countryCode;
+  //   return countryCode;
+  return currencyCode;
 }
 
 function renderSuggestion({ name, alpha2: countryCode, currencyCode }) {
